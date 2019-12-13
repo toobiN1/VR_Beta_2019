@@ -24,9 +24,11 @@ public class HexagonDestroyController : MonoBehaviour
     public HexagonRenderScript hexRenderScript;
     public BlockSpawnController blocksSpnCon;
     public GameManager gm;
+    
 
     void Start()
     {
+        gameObject.GetComponent<Interactable>().highlightOnHover = false; //Deaktiviert hexagon highlight
         destroyReady = false;
         danger = false;
         //Beim Start beginnt die DangerRate, die nach einer zufälligen Zeit 
@@ -46,6 +48,7 @@ public class HexagonDestroyController : MonoBehaviour
                 untouched = true;
                 hexRenderScript.SetSelfDestructMat();
                 StartCoroutine(DestroyTimer());
+                gameObject.GetComponent<Interactable>().highlightOnHover = true;
             }
             // Ende Gelände. Punkt, Aus , Ende. Rien ne va Plus.
             if (destroyReady)
