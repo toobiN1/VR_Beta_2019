@@ -32,18 +32,18 @@ public class GameManager : MonoBehaviour
         // Time ist bei 1 damit sie am Anfang die Blöcke nicht verlangsamt
         currentTime = 1;
         timeController = FindObjectOfType<TimeController>();
-        heightMeasureScript1 = heightMeasure1.GetComponent<HeightMeasureScript>();
-        heightMeasureScript2 = heightMeasure2.GetComponent<HeightMeasureScript>();
-        heightMeasureScript3 = heightMeasure3.GetComponent<HeightMeasureScript>();
-        heightMeasureScript4 = heightMeasure4.GetComponent<HeightMeasureScript>();
-        heightMeasureScript5 = heightMeasure5.GetComponent<HeightMeasureScript>();
-        heightMeasureScript6 = heightMeasure6.GetComponent<HeightMeasureScript>();
-        heightMeasureScript7 = heightMeasure7.GetComponent<HeightMeasureScript>();
-        heightMeasureScript8 = heightMeasure8.GetComponent<HeightMeasureScript>();
-        heightMeasureScript9 = heightMeasure9.GetComponent<HeightMeasureScript>();
-        heightMeasureScript10 = heightMeasure10.GetComponent<HeightMeasureScript>();
-        heightMeasureScript11 = heightMeasure11.GetComponent<HeightMeasureScript>();
-        heightMeasureScript12 = heightMeasure12.GetComponent<HeightMeasureScript>();
+        //heightMeasureScript1 = heightMeasure1.GetComponent<HeightMeasureScript>();
+        //heightMeasureScript2 = heightMeasure2.GetComponent<HeightMeasureScript>();
+        //heightMeasureScript3 = heightMeasure3.GetComponent<HeightMeasureScript>();
+        //heightMeasureScript4 = heightMeasure4.GetComponent<HeightMeasureScript>();
+        //heightMeasureScript5 = heightMeasure5.GetComponent<HeightMeasureScript>();
+        //heightMeasureScript6 = heightMeasure6.GetComponent<HeightMeasureScript>();
+        //heightMeasureScript7 = heightMeasure7.GetComponent<HeightMeasureScript>();
+        //heightMeasureScript8 = heightMeasure8.GetComponent<HeightMeasureScript>();
+        //heightMeasureScript9 = heightMeasure9.GetComponent<HeightMeasureScript>();
+        //heightMeasureScript10 = heightMeasure10.GetComponent<HeightMeasureScript>();
+        //heightMeasureScript11 = heightMeasure11.GetComponent<HeightMeasureScript>();
+        //heightMeasureScript12 = heightMeasure12.GetComponent<HeightMeasureScript>();
     }
 
     // Update is called once per frame
@@ -65,54 +65,54 @@ public class GameManager : MonoBehaviour
         // Dafür muss aber einerseits zuerst die erste und dann zweite Messlatte berührt werden. Diese Logik geht mit den folgenden Messlatten so weiter.
         // Dadurch öffnen sich die Messlatten nacheinander beim Bauen des Turms und der Spieler kann nicht schummeln durch Hochwerfen der Blöcke, 
         // wo dann nämlich die Messlatten die Blöcke nicht messen, weil deren open-Attribut false bleibt!
-        if (heightMeasureScript1.touchingBlock == true)
-        {
-            heightMeasureScript1.open = true;
-            if (heightMeasureScript2.touchingBlock == true )
-            {
-                heightMeasureScript2.open = true;
-                if (heightMeasureScript3.touchingBlock == true)
-                {
-                    heightMeasureScript3.open = true;
-                    if (heightMeasureScript4.touchingBlock == true)
-                    {
-                        heightMeasureScript4.open = true;
-                        if (heightMeasureScript5.touchingBlock == true)
-                        {
-                            heightMeasureScript5.open = true;
-                            if (heightMeasureScript6.touchingBlock == true)
-                            {
-                                heightMeasureScript6.open = true;
-                                if (heightMeasureScript7.touchingBlock == true)
-                                {
-                                    heightMeasureScript7.open = true;
-                                    if (heightMeasureScript8.touchingBlock == true)
-                                    {
-                                        heightMeasureScript8.open = true;
-                                        if (heightMeasureScript9.touchingBlock == true)
-                                        {
-                                            heightMeasureScript9.open = true;
-                                            if (heightMeasureScript10.touchingBlock == true)
-                                            {
-                                                heightMeasureScript10.open = true;
-                                                if (heightMeasureScript11.touchingBlock == true)
-                                                {
-                                                    heightMeasureScript11.open = true;
-                                                    if (heightMeasureScript12.touchingBlock == true)
-                                                    {
-                                                        heightMeasureScript12.open = true;
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    }
-                                }
-                            }
-                        }
-                    }
-                }
-            }
-        }
+        //if (heightMeasureScript1.touchingBlock == true)
+        //{
+        //    heightMeasureScript1.open = true;
+        //    if (heightMeasureScript2.touchingBlock == true )
+        //    {
+        //        heightMeasureScript2.open = true;
+        //        if (heightMeasureScript3.touchingBlock == true)
+        //        {
+        //            heightMeasureScript3.open = true;
+        //            if (heightMeasureScript4.touchingBlock == true)
+        //            {
+        //                heightMeasureScript4.open = true;
+        //                if (heightMeasureScript5.touchingBlock == true)
+        //                {
+        //                    heightMeasureScript5.open = true;
+        //                    if (heightMeasureScript6.touchingBlock == true)
+        //                    {
+        //                        heightMeasureScript6.open = true;
+        //                        if (heightMeasureScript7.touchingBlock == true)
+        //                        {
+        //                            heightMeasureScript7.open = true;
+        //                            if (heightMeasureScript8.touchingBlock == true)
+        //                            {
+        //                                heightMeasureScript8.open = true;
+        //                                if (heightMeasureScript9.touchingBlock == true)
+        //                                {
+        //                                    heightMeasureScript9.open = true;
+        //                                    if (heightMeasureScript10.touchingBlock == true)
+        //                                    {
+        //                                        heightMeasureScript10.open = true;
+        //                                        if (heightMeasureScript11.touchingBlock == true)
+        //                                        {
+        //                                            heightMeasureScript11.open = true;
+        //                                            if (heightMeasureScript12.touchingBlock == true)
+        //                                            {
+        //                                                heightMeasureScript12.open = true;
+        //                                            }
+        //                                        }
+        //                                    }
+        //                                }
+        //                            }
+        //                        }
+        //                    }
+        //                }
+        //            }
+        //        }
+        //    }
+        //}
 
     }
     // lädt die Szene mit dem übergenen Namen

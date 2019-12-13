@@ -60,6 +60,10 @@ public class BlockController : MonoBehaviour
         {
             Physics.IgnoreCollision(col.collider, m_Collider);
         }
+        if (col.gameObject.tag == "Box" || col.gameObject.tag == "Table" || !pickedUp )
+        {
+            transform.parent = GameObject.Find("blocks_test").transform;
+        }
     }
 
     void OnTriggerEnter(Collider other)
@@ -85,12 +89,14 @@ public class BlockController : MonoBehaviour
         rb.useGravity = true;
         // Beim Aufheben wird der tag geändert, damit er nicht zerstört werden kann, wenn er in Hand ist. Sonst meckert SteamVR herum.
         transform.tag = "Untagged";
+        transform.parent = null;
     }
     public void OnDetached()
     {
         // Beim Loslassen wird der tag geändert, damit der Block wieder zerstört werden kann.
         transform.tag = "Block";
         pickedUp = false;
+        
     }
 
 }

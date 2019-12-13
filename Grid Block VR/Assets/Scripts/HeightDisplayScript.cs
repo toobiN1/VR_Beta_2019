@@ -12,6 +12,7 @@ public class HeightDisplayScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+       
         running = true;
         gameManager = FindObjectOfType<GameManager>();
     }
@@ -19,12 +20,15 @@ public class HeightDisplayScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Das Textmesh zeigt den score vom gameManager an. Wenn Phase 2 vorbei ist, soll der letzte score weiterhin gespeichert werden.
-        if(running){
-        heightText.text = gameManager.score.ToString();
-        gameManager.score = 0;    
-        }
         
+        // Das Textmesh zeigt den score vom gameManager an. Wenn Phase 2 vorbei ist, soll der letzte score weiterhin gespeichert werden.
+        if (gameManager.phaseTwo)
+        {
+            
+            heightText.text = gameManager.score.ToString();
+            gameManager.score = 0;
+        }
+
     }
 
 }

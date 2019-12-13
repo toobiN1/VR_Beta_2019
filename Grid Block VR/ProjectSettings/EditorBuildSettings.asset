@@ -10,8 +10,11 @@ EditorBuildSettings:
     guid: be2ae0d84418edc4b918d50e1a4dbf2f
   - enabled: 1
     path: Assets/Scenes/HardModeScene.unity
-    guid: 47154cdc7438a6544b33e3b87668fd00
-  - enabled: 1
+    guid: 15e37ec6be5f9c04d9fbb61f446391a8
+  - enabled: 0
     path: Assets/Scenes/EasyModeScene.unity
     guid: 4544c10c046a8e9418146091b081059d
+  - enabled: 0
+    path: Assets/Scenes/HardModeScene123.unity
+    guid: 47154cdc7438a6544b33e3b87668fd00
   m_configObjects: {}

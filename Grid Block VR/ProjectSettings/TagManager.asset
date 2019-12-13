@@ -11,6 +11,7 @@ TagManager:
   - EasyModeButton
   - HardModeButton
   - ExitButton
+  - Table
   layers:
   - Default
   - TransparentFX
